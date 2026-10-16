@@ -1,0 +1,46 @@
+﻿@page "{handler?}"
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<h3>Path Traversal</h3>
+
+<form method="get">
+    <div class="form-group">
+        <label asp-for="FileName">Prepared path to file:</label>
+        <input type="text" asp-for="FileName" />
+        <p class="text-muted">You can specify something like: "../appsettings.json"</p>
+    </div>
+    <hr />
+    <div>
+        <button asp-page-handler="file" type="submit" class="btn btn-danger">Attack!!</button>
+    </div>
+    <div>
+        <button asp-page-handler="secure" type="submit" class="btn btn-primary">Secure</button>
+    </div>
+
+    <hr />
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Existing Files (insecure):</h4>
+            <ul>
+                @foreach (var file in Model.ExistingFiles)
+                {
+                    <li><a asp-page-handler="showfileinsecure" asp-route-name="@file">@file</a></li>
+                }
+            </ul>
+        </div>
+
+        <div class="col-md-6">
+            <h4>Existing Files (secure):</h4>
+            <ul>
+                @foreach (var file in Model.ExistingFiles)
+                {
+                    <li><a asp-page-handler="showfilesecure" asp-route-name="@file">@file</a></li>
+                }
+            </ul>
+        </div>
+
+    </div>
+</form>

@@ -1,0 +1,53 @@
+﻿@page
+@model ItemsModel
+
+
+<div class="m-5">
+    <h1>My tasks</h1>
+    <p>Add new task to the list</p>
+
+    <form method="post">    
+        <div class="form-group">
+            <label for="title">Title:</label>
+            <input type="text" class="form-control" id="title" name="title" required>
+        </div>
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <textarea class="form-control" id="description" name="description" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Add task</button>
+    </form>
+</div>
+@if(Model.Items.Count == 0)
+{
+    <div class="alert-info">
+        <p>You don't have any tasks yet</p>
+    </div>
+}else
+{
+    <form method="post">
+        <table class="table table-sm">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Status</th>
+                    <th>&nbsp</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Items)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.Title</td>
+                        <td>@item.Description</td>
+                        <td>@(item.IsCompleted ? "Done" : "In Progress")</td>
+                        <td><button class="btn btn-sm btn-danger" type="submit" asp-page-handler="delete" asp-route-id="@item.Id">Delete</button></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </form>
+}

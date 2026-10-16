@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.36105.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeInjection", "src\CodeInjection\CodeInjection.csproj", "{961B5F51-29E3-4B1D-982D-98C9C2EFF376}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLInjection", "src\SQLInjection\SQLInjection.csproj", "{58E6D136-851C-4E5A-97A6-197087C846B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BOLA", "src\BrokenAccessControl\BOLA.csproj", "{AECEEF72-63EB-40B1-B8E3-4C0859BFEF0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenRedirect-Original", "src\OpenRedirect-Original\OpenRedirect-Original.csproj", "{B7F1A15D-FD13-4F83-A90D-D46A6EF8FDBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenRedirect-Fake", "src\OpenRedirect-Fake\OpenRedirect-Fake.csproj", "{BD228499-E0C0-48B7-A5CA-BF42B12A7DD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PathTraversal", "src\PathTraversal\PathTraversal.csproj", "{19AE77D2-96F0-4E2D-B3CD-92286AC432CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{961B5F51-29E3-4B1D-982D-98C9C2EFF376}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{961B5F51-29E3-4B1D-982D-98C9C2EFF376}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{961B5F51-29E3-4B1D-982D-98C9C2EFF376}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{961B5F51-29E3-4B1D-982D-98C9C2EFF376}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58E6D136-851C-4E5A-97A6-197087C846B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58E6D136-851C-4E5A-97A6-197087C846B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58E6D136-851C-4E5A-97A6-197087C846B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58E6D136-851C-4E5A-97A6-197087C846B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AECEEF72-63EB-40B1-B8E3-4C0859BFEF0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AECEEF72-63EB-40B1-B8E3-4C0859BFEF0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AECEEF72-63EB-40B1-B8E3-4C0859BFEF0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AECEEF72-63EB-40B1-B8E3-4C0859BFEF0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7F1A15D-FD13-4F83-A90D-D46A6EF8FDBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7F1A15D-FD13-4F83-A90D-D46A6EF8FDBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7F1A15D-FD13-4F83-A90D-D46A6EF8FDBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7F1A15D-FD13-4F83-A90D-D46A6EF8FDBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD228499-E0C0-48B7-A5CA-BF42B12A7DD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD228499-E0C0-48B7-A5CA-BF42B12A7DD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD228499-E0C0-48B7-A5CA-BF42B12A7DD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD228499-E0C0-48B7-A5CA-BF42B12A7DD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19AE77D2-96F0-4E2D-B3CD-92286AC432CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19AE77D2-96F0-4E2D-B3CD-92286AC432CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19AE77D2-96F0-4E2D-B3CD-92286AC432CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19AE77D2-96F0-4E2D-B3CD-92286AC432CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FB73A612-A8B8-46F0-B0A5-AD6A37A2B021}
+	EndGlobalSection
+EndGlobal

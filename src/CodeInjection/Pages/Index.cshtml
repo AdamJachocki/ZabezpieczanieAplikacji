@@ -1,0 +1,25 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+
+<div class="text-center">
+    <h1 class="display-4">Check server:</h1>
+    <form method="post">
+        <div class="form-group">
+            <label for="url">URL:</label>
+            <input type="text" class="form-control" id="url" name="url" placeholder="example.com" required>
+        </div>
+        <button type="submit" asp-page-handler="Unsafe" class="btn btn-primary">Insecure check</button>
+        <button type="submit" asp-page-handler="Safe" class="btn btn-primary">Safe check</button>
+    </form>
+</div>
+
+@if(Model.Message != null)
+{
+    <div class="alert alert-info mt-3">
+        <strong>Result:</strong> @Html.Raw(@Model.Message)
+    </div>
+}
